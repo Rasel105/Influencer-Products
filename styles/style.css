@@ -1,6 +1,83 @@
 /* Google font  */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+/*=============================================
+
+ Reseting default margin padding and box sizing
+
+ ===================********===================
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+}
+
+
+/*
+***********************************
+ Header Style sheet start from here 
+**********============*************
+*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.influencer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 30px;
+}
+
+.influencer-title h1 {
+    font-size: 52px;
+}
+
+.influencer-title p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.influencer-title .primary-button {
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    background-color: #e02c6d;
+    padding: 10px 24px;
+    border-radius: 41px;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.primary-button:active {
+    transform: skew(3deg, 0deg);
+}
+
+.primary-button .arrow {
+    margin-left: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.influencer-photo {
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.influencer-photo img {
+    width: 100%;
 }
