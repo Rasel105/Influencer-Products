@@ -41,11 +41,16 @@ body {
 }
 
 .influencer-title h1 {
+    color: #3a3a3a;
     font-size: 52px;
+    font-weight: 700;
 }
 
 .influencer-title p {
+    color: #3a3a3a;
     margin: 15px 0;
+    line-height: 24px;
+    font-weight: 600;
     font-size: 16px;
 }
 
@@ -80,4 +85,66 @@ body {
 
 .influencer-photo img {
     width: 100%;
+}
+
+
+/* main section stylesheet */
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.collection {
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.collection-title {
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.collection-banner img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.collection-details .collection-name {
+    color: #18191f;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.collection-details .collection-price {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.collection-details .filled {
+    color: #fb8200;
+    font-size: 12px;
+}
+
+.collection-details .half-empty {
+    color: #fb8200;
+    font-size: 12px;
+}
+
+.collection-details .rating-point {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #5e6366;
+}
+
+.collection-details p {
+    font: 14px;
+    color: #787885;
 }
