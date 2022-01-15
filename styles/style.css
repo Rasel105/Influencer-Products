@@ -44,6 +44,9 @@ body {
 
 .nav-bar .nav-left {
     color: #3a3a3a;
+}
+
+.nav-left h1 {
     font-size: 24px;
 }
 
@@ -57,12 +60,12 @@ body {
 }
 
 .influencer {
-    height: calc(100vh - 80px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     grid-column-gap: 30px;
+    margin-bottom: 50px;
 }
 
 .influencer-title h1 {
@@ -130,12 +133,12 @@ body {
     padding: 15px;
 }
 
-.collection-title {
+.collection-title h1 {
     color: #3a3a3a;
-    font-size: 28px;
-    font-weight: 600;
     margin: 100px 0;
     text-align: center;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .collection-banner img {
@@ -220,4 +223,70 @@ body {
     color: white;
     margin: 20px 16px;
     border-radius: 50%;
+}
+
+
+/* Nav toggler  */
+
+#nav-toggler {
+    display: none;
+}
+
+.nav-toggler-icon {
+    display: none;
+    color: black;
+    font-size: 30px;
+}
+
+
+/* Media Query start from here for Responsive Mobile and Tablet  */
+
+@media (max-width: 950px) {
+    .influencer {
+        margin-bottom: 80px;
+    }
+    .influencer-title h1 {
+        font-size: 40px;
+    }
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 804px) {
+    .influencer,
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .influencer-title {
+        order: 2;
+        text-align: center;
+    }
+    .influencer-title h1 {
+        font-size: 24px;
+    }
+    .collection-title h1 {
+        font-size: 16px;
+    }
+    .nav-toggler-icon {
+        display: block;
+    }
+    .nav-right {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        background-color: white;
+        padding: 30px 0;
+        transform: translateY(-320px);
+        transition: 0.5s ease-in-out;
+    }
+    .nav-right a {
+        color: black;
+        margin: 10px 0;
+    }
+    #nav-toggler:checked~.nav-right {
+        transform: translateY(0);
+        transition: 0.5s ease-in-out;
+    }
 }
