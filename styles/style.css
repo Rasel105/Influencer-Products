@@ -122,6 +122,10 @@ body {
 
 ============================*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 .collections {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
