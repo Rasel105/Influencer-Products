@@ -117,7 +117,9 @@ body {
 
 
 /*==========================
+
  main section stylesheet 
+
 ============================*/
 
 .collections {
@@ -196,7 +198,11 @@ body {
 }
 
 
-/* Why choose us section start here  */
+/***********************************
+
+ Why choose us section start here 
+ 
+ ***********************************/
 
 .about-section h1 {
     color: #3a3a3a;
@@ -240,10 +246,18 @@ body {
 }
 
 
-/* Why choose us section end here  */
+/*******************************
+
+Why choose us section end here  
+
+********************************/
 
 
-/* footer section style  */
+/*******************************
+
+      footer section style  
+
+********************************/
 
 .footer-section {
     width: 100%;
@@ -286,7 +300,11 @@ body {
 }
 
 
-/* Media Query start from here for Responsive Mobile and Tablet  */
+/***********************************************************
+
+Media Query start from here for Responsive Mobile and Tablet
+
+************************************************************/
 
 @media (max-width: 950px) {
     .influencer {
@@ -339,3 +357,10 @@ body {
         transition: 0.5s ease-in-out;
     }
 }
+
+
+/***********************************************************
+
+Media Query End from here for Responsive Mobile and Tablet
+
+************************************************************/
