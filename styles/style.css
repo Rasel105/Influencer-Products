@@ -196,7 +196,7 @@ body {
 }
 
 
-/* Leadership section start here  */
+/* Why choose us section start here  */
 
 .about-section h1 {
     color: #3a3a3a;
@@ -236,10 +236,11 @@ body {
 
 .about-tag h2 {
     color: #3a3a3a;
+    font-size: 20px;
 }
 
 
-/* Leadership section end here  */
+/* Why choose us section end here  */
 
 
 /* footer section style  */
@@ -294,14 +295,16 @@ body {
     .influencer-title h1 {
         font-size: 40px;
     }
-    .collections {
+    .collections,
+    .about-details {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 804px) {
     .influencer,
-    .collections {
+    .collections,
+    .about-details {
         grid-template-columns: repeat(1, 1fr);
     }
     .influencer-title {
