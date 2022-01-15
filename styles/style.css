@@ -32,7 +32,32 @@ body {
     padding: 0 30px;
 }
 
+
+/* NavBar Design  */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .nav-left {
+    color: #3a3a3a;
+    font-size: 24px;
+}
+
+.nav-bar .nav-right a {
+    color: #3a3a3a;
+    font-family: 600;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
 .influencer {
+    height: calc(100vh - 80px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -88,7 +113,9 @@ body {
 }
 
 
-/* main section stylesheet */
+/*==========================
+ main section stylesheet 
+============================*/
 
 .collections {
     display: grid;
@@ -149,6 +176,22 @@ body {
     color: #787885;
 }
 
+.see-more-btn {
+    margin: 50px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.see-more-btn a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #e02c6d;
+}
+
+.see-more-btn .arrow {
+    margin-left: 5px;
+}
+
 
 /* footer section style  */
 
@@ -159,6 +202,8 @@ body {
 }
 
 .footer-content {
+    padding-top: 45px;
+    line-height: 1.6;
     color: #ffffff;
     text-align: center;
 }
@@ -169,6 +214,9 @@ body {
 }
 
 .footer-icon .social {
+    background-color: #686464;
+    padding: 10px;
+    font-size: 20pxpx;
     color: white;
     margin: 20px 16px;
     border-radius: 50%;
